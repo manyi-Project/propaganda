@@ -16,7 +16,7 @@
     $.ajax({
         type: "GET",
         dataType: "jsonp",
-        url: "http://app.hocodo.com/webapps/weixinservice/weixinservice.php?callback=?",
+        url: "https://app.hocodo.com/webapps/weixinservice/weixinservice.php?callback=?",
         data: {"param": JSON.stringify(info)},
         async: false,
         success: function (data) {
