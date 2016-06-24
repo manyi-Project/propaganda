@@ -2,43 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebbc2fe6-e91a-4235-9b58-c1a1fb8c7922" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/params.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bg3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bg4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bg5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/book1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/book2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/book3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bottom3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bottom4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bottom5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/c1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/c2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/earth.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ks1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ks2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ks3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo-big-bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo-big.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo-small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/normalmusic.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/photo2-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/photo2-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/star1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/star2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/star3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/star4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/test1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/test2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/test3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/text1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/text3-1-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/text3-2-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/text4-1-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/text5-1-bg.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/share.js" afterPath="$PROJECT_DIR$/js/share.js" />
     </list>
     <ignored path="propagandaH5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,11 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="152" column="7" selection-start-line="152" selection-start-column="7" selection-end-line="152" selection-end-column="7" />
+            <state relative-caret-position="371">
+              <caret line="161" column="7" selection-start-line="161" selection-start-column="7" selection-end-line="161" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="share.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/share.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -78,6 +54,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/share.js" />
       </list>
     </option>
   </component>
@@ -136,6 +113,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="propagandaH5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="propagandaH5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -159,15 +150,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1466747537520</updated>
-      <workItem from="1466747538625" duration="55000" />
+      <workItem from="1466747538625" duration="1106000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55000" />
+    <option name="totallyTimeSpent" value="1106000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -191,6 +182,9 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -198,8 +192,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="152" column="7" selection-start-line="152" selection-start-column="7" selection-end-line="152" selection-end-column="7" />
+        <state relative-caret-position="371">
+          <caret line="161" column="7" selection-start-line="161" selection-start-column="7" selection-end-line="161" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/share.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
           <folding />
         </state>
       </provider>

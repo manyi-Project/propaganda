@@ -1,11 +1,11 @@
 /**
  * Created by Administrator on 2016/6/24 0024.
  */
-var imgUrl = "http://www.gdibn.com/m/images/logo.png";  //图片LOGO注意必须是绝对路径
-var lineLink = "http://www.gdibn.com/m/images/";   //网站网址，必须是绝对路径
-var descContent = '互动网络(www.gdibn.com)10年的网站开发经验,专注于网站建设，网店开发，广州SEO，企业网站设计，网站企业模板，广州网站设计，网站报价，企业网站设计，域名，空间，服务器等相关服务，著名的广州网站建设公司。自始至终，我们真心对待每一位客户。'; //分享给朋友或朋友圈时的文字简介
-var shareTitle = '广州网站建设_网站推广公司_网站优化_互动网络';  //分享title
-var appid = ''; //apiID，可留空
+var imgUrl = "http://www.gdibn.com/m/images/logo.png";
+var lineLink = "http://www.gdibn.com/m/images/";
+var descContent = 'hehehhe';
+var shareTitle = 'hahaha';  //????title
+var appid = 'wxc9937e3a66af6dc8'; //apiID????????
 
 function shareFriend() {
     WeixinJSBridge.invoke('sendAppMessage',{
@@ -40,17 +40,17 @@ function shareWeibo() {
         //_report('weibo', res.err_msg);
     });
 }
-// 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+// ??????????????????????????????WeixinJSBridgeReady?????
 document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
-    // 发送给好友
+    // ?????????
     WeixinJSBridge.on('menu:share:appmessage', function(argv){
         shareFriend();
     });
-    // 分享到朋友圈
+    // ?????????
     WeixinJSBridge.on('menu:share:timeline', function(argv){
         shareTimeline();
     });
-    // 分享到微博
+    // ???????
     WeixinJSBridge.on('menu:share:weibo', function(argv){
         shareWeibo();
     });
