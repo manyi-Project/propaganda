@@ -1,55 +1,97 @@
-var imgUrl = "http://minisite.hocodo.com/test/recruitMain/images/share.jpg";  //注意必须是绝对路径
+(function () {
+    var _title = '火码互动，招人啦！';
+    var _desc = '如果满足我们的条件，就赶紧加入我们吧！';
 
-var lineLink = "https://manyi-project.github.io/propaganda/";   //同样，必须是绝对路径
-var descContent = '最轻便的微电台精选，天天更新，你听或是不听，我都这里等着你。'; //分享给朋友或朋友圈时的文字简介
-var shareTitle = '微信电台精选';  //分享title
-var appid = ''; //apiID，可留空
 
-function shareFriend() {
-    WeixinJSBridge.invoke('sendAppMessage',{
-        "appid": appid,
-        "img_url": imgUrl,
-        "img_width": "200",
-        "img_height": "200",
-        "link": lineLink,
-        "desc": descContent,
-        "title": shareTitle
-    }, function(res) {
-        //_report('send_msg', res.err_msg);
+    var _link = 'https://manyi-project.github.io/propaganda/';
+    var _imgUrl = 'http://minisite.hocodo.com/test/recruitMain/images/share.jpg';
+    var url = window.location.href.split("#")[0];
+    var signPackage;
+    var info = {
+        appId: '',
+        secret: '',
+        url: url
+    };
+
+    $.ajax({
+        type: "GET",
+        dataType: "jsonp",
+        url: "http://app.hocodo.com/webapps/weixinservice/weixinservice.php?callback=?",
+        data: {"param": JSON.stringify(info)},
+        async: false,
+        success: function (data) {
+            console.dir(data);
+            wx.config({
+                //debug: true,
+                appId: data.appId,
+                timestamp: data.timestamp,
+                nonceStr: data.nonceStr,
+                signature: data.signature,
+                jsApiList: [
+                    // 所有要调用的 API 都要加到这个列表中
+                    'checkJsApi',
+                    'onMenuShareTimeline',
+                    'onMenuShareAppMessage',
+                    'onMenuShareQQ',
+                    'onMenuShareWeibo',
+                    'hideMenuItems',
+                    'showMenuItems',
+                    'hideAllNonBaseMenuItem',
+                    'showAllNonBaseMenuItem',
+                    'getNetworkType',
+                    'openLocation',
+                    'getLocation',
+                    'hideOptionMenu',
+                    'showOptionMenu',
+                    'closeWindow'
+                ]
+            });
+
+            wx.ready(function () {
+                // 在这里调用 API
+                // 2. 分享接口
+                // 2.1 监听“分享给朋友”，按钮点击、自定义分享内容及分享结果接口
+
+                wx.onMenuShareAppMessage({
+                    title: _title,
+                    desc: _desc,
+                    link: _link,
+                    imgUrl: _imgUrl,
+                    trigger: function (res) {
+                        //alert('用户点击发送给朋友');
+                    },
+                    success: function (res) {
+                        //alert('已分享');
+                    },
+                    cancel: function (res) {
+                        //alert('已取消');
+                    },
+                    fail: function (res) {
+                        //alert(JSON.stringify(res));
+                    }
+                });
+
+
+                // 2.2 监听“分享到朋友圈”按钮点击、自定义分享内容及分享结果接口
+
+                wx.onMenuShareTimeline({
+                    title: _title,
+                    link: _link,
+                    imgUrl: _imgUrl,
+                    trigger: function (res) {
+                        // alert('用户点击分享到朋友圈');
+                    },
+                    success: function (res) {
+                        // alert('已分享');
+                    },
+                    cancel: function (res) {
+                        // alert('已取消');
+                    },
+                    fail: function (res) {
+                        // alert(JSON.stringify(res));
+                    }
+                });
+            });	//end of wx.ready
+        }
     })
-}
-function shareTimeline() {
-    WeixinJSBridge.invoke('shareTimeline',{
-        "img_url": imgUrl,
-        "img_width": "200",
-        "img_height": "200",
-        "link": lineLink,
-        "desc": descContent,
-        "title": shareTitle
-    }, function(res) {
-        //_report('timeline', res.err_msg);
-    });
-}
-function shareWeibo() {
-    WeixinJSBridge.invoke('shareWeibo',{
-        "content": descContent,
-        "url": lineLink,
-    }, function(res) {
-        //_report('weibo', res.err_msg);
-    });
-}
-// 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
-document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
-    // 发送给好友
-    WeixinJSBridge.on('menu:share:appmessage', function(argv){
-        shareFriend();
-    });
-    // 分享到朋友圈
-    WeixinJSBridge.on('menu:share:timeline', function(argv){
-        shareTimeline();
-    });
-    // 分享到微博
-    WeixinJSBridge.on('menu:share:weibo', function(argv){
-        shareWeibo();
-    });
-}, false);
+})();
